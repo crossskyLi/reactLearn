@@ -1,0 +1,14 @@
+$--button-text-color: #f60;
+.rc-button{
+  width: 100px;
+  height: 32px;
+  background: #fff;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0;
+  
+  span{
+    color:$--button-text-color;
+  }
+}
