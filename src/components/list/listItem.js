@@ -6,9 +6,11 @@ class ListItem extends Component {
     console.log(this.props)
   }
   render() {
-    const { item } = this.props;
+    const { item, slot, children} = this.props;
     return (<li>
       {item * item}
+      {slot}
+      {children}
     </li>)
   }
 }
