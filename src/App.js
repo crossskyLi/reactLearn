@@ -3,6 +3,8 @@ import './App.css';
 import List from './components/list'
 import Button from './components/button'
 import FuncCom from './components/funcCom'
+import RefDemo from './components/refDemo'
+
 class App extends React.Component {
   constructor() {
     super()
@@ -17,6 +19,7 @@ class App extends React.Component {
           <FuncCom></FuncCom>
           <Button onClick={this.handleClick.bind(this)}>add item</Button>
           <List dataList={this.state.dataList}></List>
+          <RefDemo></RefDemo>
         </header>
       </div>
     );
