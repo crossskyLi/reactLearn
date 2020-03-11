@@ -6,9 +6,13 @@ class ListItem extends Component {
     console.log(this.props)
   }
   render() {
-    const { item, slot, children} = this.props;
+    const {
+      item,
+      slot,
+      children
+    } = this.props;
     return (<li>
-      {item * item}
+      {item * item}寫得按
       {slot}
       {children}
     </li>)

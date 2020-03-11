@@ -11,7 +11,7 @@ class List extends Component {
           <ListItem
             key={item}
             item={item}
-            slot={<SlotCom>sss</SlotCom>}
+            slot={<><SlotCom>sss</SlotCom><SlotCom>sss</SlotCom></>}
           ></ListItem>
         ))}
         {/* 插槽 */}

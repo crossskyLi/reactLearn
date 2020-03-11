@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import Button from '../button';
-console.log(Object.getOwnPropertyDescriptors(React));
-export default function FuncCom() {
+
+function FuncCom(props) {
+  const { doSomething } = props;
+
+  doSomething(props)
+
   const [count, setCount] = useState(0);
+
   const handle = () => {
     setCount(count + 1);
   };
@@ -13,3 +18,5 @@ export default function FuncCom() {
     </div>
   );
 }
+
+export default FuncCom

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class RefCom extends Component {
+  count = 1
   state = {
     count: 1
   };
