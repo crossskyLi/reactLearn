@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   getData = () => {
-    const host = "http://127.0.0.1:3400"
+    const host = "127.0.0.1:3400"
 
     const api = axios.create({
       timeout: 60000,
@@ -70,7 +70,7 @@ class App extends React.Component {
       // }
     }
     //请求数据函数
-    api.get('/getUserList', { params }).then((res) => {
+    api.get('/users/getUserList', { params }).then((res) => {
       console.log(res)
     })
   }
